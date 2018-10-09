@@ -3,7 +3,7 @@ A simple super lightweight key-value based data store
 
 
 ## How to compile & run
-[Install cargo](https://crates.io/) if you don't have it. You can compile the project from the project folder using the command line:
+[Install cargo](https://crates.io/) if you don't have it. You can compile & run the project from the project folder using the command line:
 
 ```sh
 cargo run --release
