@@ -1,0 +1,8 @@
+[package]
+name = "kavakava"
+version = "0.1.0"
+authors = ["bsoptei <bsoptei@gmail.com>"]
+
+[dependencies]
+colored = "1.6.1"
+csv = "1.0.2"
