@@ -26,7 +26,7 @@ pub fn launch() -> () {
                 handle_incoming(stream, &mut store)
             }
         }
-        Err(err) => print_error("Could not launch kava", err)
+        Err(err) => print_error("Could not launch kavakava", err)
     }
 }
 
@@ -111,7 +111,7 @@ fn read_csv(store: &mut Store, path: &str, delimiter: &str) -> Result<(), CsvErr
             .has_headers(false)
             .terminator(Terminator::CRLF)
             .delimiter(delimiter.as_bytes()[0])
-            .from_path(path.to_string())?;
+            .from_path(path)?;
 
     for record in rdr.records() {
         let rec = record?;
@@ -128,7 +128,7 @@ fn write_csv(store: &Store, path: &str, delimiter: &str) -> Result<(), CsvError>
             .has_headers(false)
             .terminator(Terminator::CRLF)
             .delimiter(delimiter.as_bytes()[0])
-            .from_path(path.to_string())?;
+            .from_path(path)?;
 
     for (key, value) in store.iter() {
         wtr.write_record(&[key, value])?;
