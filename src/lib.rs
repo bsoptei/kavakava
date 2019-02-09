@@ -1,6 +1,3 @@
-extern crate csv;
-extern crate colored;
-
 use csv::{Error as CsvError, ReaderBuilder, Terminator, WriterBuilder};
 use colored::*;
 
