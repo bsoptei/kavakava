@@ -1,9 +1,11 @@
 use csv::{Error as CsvError, ReaderBuilder, Terminator, WriterBuilder};
 use colored::*;
 
-use std::collections::BTreeMap;
-use std::io::prelude::*;
-use std::net::{TcpListener, TcpStream};
+use std::{
+    collections::BTreeMap,
+    io::prelude::*,
+    net::{TcpListener, TcpStream},
+};
 
 type Store = BTreeMap<String, String>;
 
