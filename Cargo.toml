@@ -5,5 +5,5 @@ authors = ["bsoptei <bsoptei@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-colored = "1.6.1"
+colored = "1.8"
 csv = "1.0.2"
